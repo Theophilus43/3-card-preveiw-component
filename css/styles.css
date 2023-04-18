@@ -57,18 +57,19 @@ p{
 .sedans{
     background-color: var(--Bright-orange);
     border-radius: 8px 8px 0 0;
-    display: grid;
+    height: 50%;
 }
 
 .suvs{
     background-color: var( --Dark-cyan);
-    display: grid;
+    border: 0;
+    height: 50%;
 }
 
 .luxury{
     background-color: var(--Very-dark-cyan);
     border-radius: 0 0 8px 8px;
-    display: grid;
+    height: 50%;
 }
 
 
