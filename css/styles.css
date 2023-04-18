@@ -1,0 +1,172 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   align-items: center;
+}
+
+
+.container{
+    margin: 4em 1em 2em 1em;
+    display: flex;
+    flex-direction: column;  
+    text-align: left;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 800px;
+}
+
+h1,
+p{
+    padding-top: 1em;
+    width: 70%; 
+    padding-left: 3em;  
+}
+
+h1{
+    color: var(--Very-light-gray);
+    padding-left: 1.5em;
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 0.6em;
+}
+
+p{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    
+}
+
+
+
+.sedans{
+    background-color: var(--Bright-orange);
+    border-radius: 8px 8px 0 0;
+    display: grid;
+}
+
+.suvs{
+    background-color: var( --Dark-cyan);
+    display: grid;
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+    display: grid;
+}
+
+
+@media (min-width: 700px) {
+    .container{
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sedans{
+        border-radius: 8px 0 0 8px;
+    }
+    .luxury{
+        border-radius: 0 8px 8px 0;
+    }
+}
+
+.first{
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+ 
+}
+
+.second{
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+}
+
+.third{
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+}
+
+.first-button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 16px;
+    text-decoration: none;
+    padding: 0.8em 1.7em; 
+    background-color: white;
+    color: var(--Bright-orange);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 0.78em
+}
+
+.second-button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 16px;
+    text-decoration: none;
+    padding: 0.8em 1.7em; 
+    background-color: white;
+    color: var(--Dark-cyan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 0.78em
+}
+
+.third-button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 16px;
+    text-decoration: none;
+    padding: 0.8em 1.7em; 
+    background-color: white;
+    color: var(--Very-dark-cyan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 0.78em
+}
+
+.first-button:is(:hover, :focus) {
+    background-color: var(--Bright-orange);
+    color: white;
+    border: 1px solid;
+}
+
+.second-button:is(:hover, :focus) {
+    background-color: var( --Dark-cyan);
+    color: white;
+    border: 1px solid;
+}
+
+.third-button:is(:hover, :focus) {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border: 1px solid;
+}
+
+
+img{
+    padding-top: 2em;
+    padding-left: 2.6em
+}
+
+
+
