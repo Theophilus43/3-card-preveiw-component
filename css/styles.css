@@ -26,7 +26,7 @@ body{
     text-align: left;
     align-items: center;
     min-height: 100vh;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 h1,
@@ -47,7 +47,7 @@ p{
     color: var(--Transparent-white);
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.3em;
-    padding-top: 1em;
+    
     padding-bottom: 1.5em;
     
 }
@@ -57,19 +57,19 @@ p{
 .sedans{
     background-color: var(--Bright-orange);
     border-radius: 8px 8px 0 0;
-    height: 50%;
+    
 }
 
 .suvs{
-    background-color: var( --Dark-cyan);
-    border: 0;
-    height: 50%;
+        background-color: var( --Dark-cyan);
+
+        
 }
 
 .luxury{
     background-color: var(--Very-dark-cyan);
     border-radius: 0 0 8px 8px;
-    height: 50%;
+  
 }
 
 
@@ -82,6 +82,7 @@ p{
     .sedans{
         border-radius: 8px 0 0 8px;
     }
+
     .luxury{
         border-radius: 0 8px 8px 0;
     }
